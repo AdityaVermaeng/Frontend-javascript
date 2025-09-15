@@ -82,7 +82,7 @@
 // guess the correct number(user input)
 let guessNum = 34;
 let userNum = Number(prompt("Enter your no to guess-"))
-while (guessNum !== userNum) {
+while (userNum != guessNum) {
     userNum = prompt("You entered erong Number. Guess again! :");
 }
 console.log("Congrats , You entered the right number")
