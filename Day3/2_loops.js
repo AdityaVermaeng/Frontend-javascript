@@ -81,10 +81,9 @@
 
 // guess the correct number(user input)
 let guessNum = 34;
-let userName = Number(prompt("Enter your no to guess-"))
-if (guessNum == userName) {
-    console.log("Congrats you guess right");
-} else {
-    console.log("oops! try other");
+let userNum = Number(prompt("Enter your no to guess-"))
+while (guessNum !== userNum) {
+    userNum = prompt("You entered erong Number. Guess again! :");
 }
-///only show or run into the browser console
+console.log("Congrats , You entered the right number")
+    ///only show or run into the browser console
