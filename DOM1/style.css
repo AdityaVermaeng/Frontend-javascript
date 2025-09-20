@@ -1,0 +1,13 @@
+#head1 {
+    background-color: aqua;
+    color: black;
+}
+
+.heading-class {
+    background-color: yellow;
+    color: brown;
+}
+
+body {
+    background-color: azure;
+}
