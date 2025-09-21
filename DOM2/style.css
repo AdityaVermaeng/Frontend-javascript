@@ -1,0 +1,10 @@
+#box {
+    height: 200px;
+    width: 100px;
+    background-color: azure;
+    border: 3px solid rebeccapurple;
+    /* border-radius: 50px; */
+    color: black;
+    /* justify-content: center; */
+    /* align-items: center; */
+}

@@ -1,0 +1,14 @@
+body {
+    border: 3px solid black;
+    background-color: aqua;
+}
+
+.content {
+    color: brown;
+    font-size: 23px;
+}
+
+.content2 {
+    color: rgb(30, 0, 255);
+    background-color: white;
+}
