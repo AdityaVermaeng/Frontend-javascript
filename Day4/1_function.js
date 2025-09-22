@@ -12,20 +12,34 @@
 // } //function definition
 // sum(p1, p2)//function call
 // sum(4, 5) //output-9
+
+//function with return keyword
+
 // function numSum(a, b) {
-//     // return a + b;
-//     console.log(a + b);
+// return a + b;
+// console.log(a + b);
 // }
 // let num1 = numSum(5, 9); //we can not store that value in a variable because function is not returning any value 
 //when we donot use return then function only ferform the task and end not send any value to outside
 // console.log(num1); //show undefined
+//function expression
+let hello = function(name) {
 
-function numSum(a, b) {
-    return a + b; //return the value 
-    // after the return no code will be executed
+    // console.log("Hello js");
+    console.log(name); //Aditya
+    return name;
+    // console.log(name);//not executed
 }
-let num1 = numSum(5, 9); //we camn use this value further in various situations(maths,conditions)
-console.log(num1); //14
+let hel = hello("Aditya")
+console.log(hel);
+
+
+// function numSum(a, b) {
+//     return a + b; //return the value 
+// after the return no code will be executed
+// }
+// let num1 = numSum(5, 9); //we camn use this value further in various situations(maths,conditions)
+// console.log(num1); //14
 
 //Arrow function
 //it is a compact way to writting a function 
@@ -58,11 +72,11 @@ console.log(num1); //14
 // function countVowel(str) {
 //     let count = 0;
 //     for (const char of str) {
-//         if (char === "a" ||
-//             char === "e" ||
-//             char === "i" ||
-//             char === "o" ||
-//             char === "") {
+// if (char === "a" ||
+//     char === "e" ||
+//     char === "i" ||
+//     char === "o" ||
+//     char === "") {
 //             count++;
 //         }
 //     }
@@ -70,6 +84,34 @@ console.log(num1); //14
 // }
 // let val = countVowel("abcdefghi");
 // console.log(val);
+
+//greatest of two number
+// function num5(p, q) {
+//     if (p < q) {
+//         console.log("p is smaller");
+//     } else if{
+//         console.log("q is greater");
+//     }
+// else {
+//     console.log("both are equal");
+// }
+// }
+// num5(7, 9)
+
+//check word is vowel or consonant
+// function checkStr(val) {
+//     let char = val;
+//     if (char === "a" ||
+//         char === "e" ||
+//         char === "i" ||
+//         char === "o" ||
+//         char === "u") {
+//         console.log("vowel");
+//     } else {
+//         console.log("consonant");
+//     }
+// }
+// checkStr("p")
 
 //forEach loop in Function
 // Array.forEach(callBackFunction) //passed as an argument for another function
