@@ -35,6 +35,7 @@
 //     i++;
 // }
 
+
 //do-while
 
 // let j = 1;
@@ -44,6 +45,24 @@
 //     }
 //     j++;
 // } while (j <= 59)
+
+
+// let choice;
+// do {
+//     console.log("1.  Check Even or Odd");
+//     console.log("2.  Exit");
+//     choice = parseInt(prompt("Enter your choice"));
+//     if (choice === 1) {
+//         let num = parseInt(prompt("Enter a Number:"));
+
+//         if (num % 2 === 0) {
+//             console.log(num + "is Even");
+//         } else {
+//             console.log(num + "is Odd");
+//         }
+//     }
+// }
+// while (choice !== 2);
 
 
 
@@ -80,10 +99,26 @@
 
 
 // guess the correct number(user input)
-let guessNum = 34;
-let userNum = Number(prompt("Enter your no to guess-"))
-while (userNum != guessNum) {
-    userNum = prompt("You entered erong Number. Guess again! :");
-}
-console.log("Congrats , You entered the right number")
-    ///only show or run into the browser console
+// let guessNum = 34;
+// let userNum = Number(prompt("Enter your no to guess-"))
+// while (userNum != guessNum) {
+//     userNum = prompt("You entered erong Number. Guess again! :");
+// }
+// console.log("Congrats , You entered the right number")
+///only show or run into the browser console
+
+//Switch cases
+// let choice;
+// do {
+//     console.log("1.Addition");
+//     console.log("2.Subtraction");
+//     console.log("3.Multiplication");
+//     console.log("4.Modulo");
+//     console.log("5.Exit");
+//     choice = parseInt(prompt('Enter your choice'))
+//     if (choice >= 1 && choice <= 4) {
+//         let a = parseInt(prompt("Enter your first number:"));
+//         let b = parseInt(prompt("Enter your second number:"));
+
+//     }
+// }

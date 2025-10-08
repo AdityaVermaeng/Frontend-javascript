@@ -163,8 +163,21 @@ console.log(newArr);
 
 //practice Questions
 //Q1- we are given array of marks od student . filter out of the marks of student that scored 90.
-let marks = [67, 93, 64, 99, 86];
-let newMarks = marks.filter((val) => {
-    return val > 90;
-});
-console.log(newMarks);
+// let marks = [67, 93, 64, 99, 86];
+// let newMarks = marks.filter((val) => {
+//     return val > 90;
+// });
+// console.log(newMarks);
+
+
+//Important
+// function child() {
+//     console.log("child is called");
+// }
+
+// function parent(a) {
+// console.log(a); //we just call  the function we get as the child function structure cause of console
+// a(); // in this case we just get the output cause of being child execute 
+// }
+// parent(child) //a fumction which is pass as an aurgument within a function is known as callback function 
+//the function which takes that callback function is known as highorder function
