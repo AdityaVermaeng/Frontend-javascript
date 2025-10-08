@@ -181,3 +181,11 @@ console.log(newArr);
 // }
 // parent(child) //a fumction which is pass as an aurgument within a function is known as callback function 
 //the function which takes that callback function is known as highorder function
+
+
+// function child() {
+//     a();
+// }
+// parent(() => {
+//     console.log("child is called");
+// })
