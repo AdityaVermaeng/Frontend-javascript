@@ -154,11 +154,11 @@ console.log(hel);
 
 
 //filter method-creates a new array of elements that give  ture for a condition
-let nums = [67, 65, 89, 76, 45, 34, 15, 32, 63];
-let newArr = nums.filter((val) => {
-    return val > 50;
-})
-console.log(newArr);
+// let nums = [67, 65, 89, 76, 45, 34, 15, 32, 63];
+// let newArr = nums.filter((val) => {
+//     return val > 50;
+// })
+// console.log(newArr);
 
 
 //practice Questions
@@ -182,10 +182,49 @@ console.log(newArr);
 // parent(child) //a fumction which is pass as an aurgument within a function is known as callback function 
 //the function which takes that callback function is known as highorder function
 
+//2nd type
+// function parent() {
+//     a()
+// }
+// parent(function child() {
+//     console.log("child is called");
+// })
 
-// function child() {
-//     a();
+//3rd type
+// function parent() {
+//     a()
 // }
 // parent(() => {
 //     console.log("child is called");
 // })
+
+//return used
+// function parent() {
+//     let hii = a();
+//     console.log(hii);//hiii child print 
+// }
+// parent(() => {
+// return "hii child"; this parent only perform the manupulation but not return anything(for Each)cause of unavailability of return keyword
+//}
+
+// function parent() {
+//     let hii = a();
+// console.log(hii);//  basiclally used in map it return some value or new array cause it consist return keyword in the parent function
+//     return hii;
+// }
+// let finalResult = parent(() => {
+//     return "hii child";
+// })
+// console.log(finalResult)
+
+// 
+// function parent() {
+//     let hii = a("neha");
+// console.log(hii);//manupulation  // foreach()
+// return hii; // this means parent also return something (finaly return neha )
+// }
+// finalResult = parent((name) => {
+// return "hii child";
+//     return name;
+// })
+// console.log(finalReturn); //parent return neha //by return map method
