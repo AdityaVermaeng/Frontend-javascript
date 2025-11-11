@@ -72,3 +72,26 @@ if (f >= 90 && f <= 100) {
 if (f <= 32) {
     console.log("You are fail");
 }
+
+//using return keyword with function
+function getGrade(score) {
+    if (score >= 90 && score <= 100) return "A";
+    if (score >= 80 && score <= 89) return "B";
+    if (score >= 70 && score <= 79) return "C";
+    if (score >= 60 && score <= 69) return "D";
+    if (score >= 33 && score <= 59) return "E";
+    return "fail"
+}
+console.log(getGrade(32));
+
+//Rock-Paper-Scissors logic
+function rps(user, computer) {
+    if (user === computer) return "Draw";
+    if (user === "rock" && computer === "scissor") return "user win";
+    if (user === "scissor" && computer === "paper") return "user win";
+    if (user === "paper" && computer === "rock") return "user win";
+    return "computer win";
+
+}
+let d = rps("paper", "rock");
+console.log(d);
