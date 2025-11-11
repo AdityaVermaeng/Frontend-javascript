@@ -19,5 +19,5 @@
 // let div = document.querySelector("div")
 // console.dir(div);
 
-let head5 = document.querySelector("h5")
-    // console.dir(head5)
+let head5 = document.querySelector("h5");
+// console.dir(head5)
