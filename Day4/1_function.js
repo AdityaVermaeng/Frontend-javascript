@@ -1,19 +1,25 @@
 //Function-it is a block of code that is use to performthe task,can be invoked whenever needed
 
-// function myFunction() {
-//     console.log("Hello guys");
-//     console.log("Welcome to Function");
-// }
-// myFunction()
+function myFunction() {
+    console.log("Hello guys");
+    console.log("Welcome to Function");
+}
+myFunction();
 
 // function sum(x, y) //parameters
 // {
 // console.log(x + y);
-// } //function definition
+// } //function definition with default parameter
 // sum(p1, p2)//function call
 // sum(4, 5) //output-9
 
-//function with return keyword
+//rest parameter
+function num(a, b, c, ...val) {
+    console.log(a, b, c, val);
+}
+num(1, 4, 6, 7, 8, 9, 4, 2); //provide an array
+
+//function with return keyword 
 
 // function numSum(a, b) {
 // return a + b;
