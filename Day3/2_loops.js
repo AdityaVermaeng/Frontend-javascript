@@ -25,15 +25,31 @@
 
 // }
 
-//print even no
-// let i = 1;
-// while (i <= 10) {
+let p = 1;
+while (p <= 10) {
+    console.log(p);
+    p++
+}
 
-//     if (i % 2 === 0) {
+//print even no
+// let t = 1;
+// while (t <= 10) {
+
+//     if (t % 2 === 0) {
 //         console.log(i);
 //     }
-//     i++;
+//     t++;
 // }
+
+//sum of numbers
+
+let i = 1;
+let sum = 0;
+while (i <= 6) {
+    sum = sum + i;
+    console.log(sum);
+    i++;
+}
 
 
 //do-while
@@ -44,7 +60,7 @@
 //         console.log(j);
 //     }
 //     j++;
-// } while (j <= 59)
+// } while (j <= 59) // at least once execute
 
 
 // let choice;
