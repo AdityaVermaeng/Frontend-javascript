@@ -160,20 +160,20 @@ console.log(hel);
 
 
 //filter method-creates a new array of elements that give  ture for a condition
-// let nums = [67, 65, 89, 76, 45, 34, 15, 32, 63];
-// let newArr = nums.filter((val) => {
-//     return val > 50;
-// })
-// console.log(newArr);
+let nums = [67, 65, 89, 76, 45, 34, 15, 32, 63];
+let newArr = nums.filter((val) => {
+    return val > 50;
+})
+console.log(newArr);
 
 
 //practice Questions
 //Q1- we are given array of marks od student . filter out of the marks of student that scored 90.
-// let marks = [67, 93, 64, 99, 86];
-// let newMarks = marks.filter((val) => {
-//     return val > 90;
-// });
-// console.log(newMarks);
+let marks = [67, 93, 64, 99, 86];
+let newMarks = marks.filter((val) => {
+    return val > 90;
+});
+console.log(newMarks);
 
 
 //Important
@@ -234,3 +234,17 @@ console.log(hel);
 //     return name;
 // })
 // console.log(finalReturn); //parent return neha //by return map method
+
+
+// let multiply = (a, b) => {
+//     return a * b;
+// }
+// let ans = multiply(9, 8);
+// console.log(ans);
+
+function checkAge(val) {
+    if (val < 18) return "Not Allowed";
+    return "Allowed";
+}
+let num0 = checkAge(23);
+console.log(num0);
