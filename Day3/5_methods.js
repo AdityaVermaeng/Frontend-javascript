@@ -28,7 +28,7 @@ let clone = [...arr1] //spread operator used
 console.log(arr1);
 console.log(clone);
 arr1.push("Iron-man");
-console.log(arr1);
+console.log(arr1); //cloning of an array with sallow copy
 console.log(clone);
 
 
@@ -50,3 +50,14 @@ console.log(clone0);
 price.push("prince");
 console.log(price);
 console.log(clone0);
+
+
+//array inside array
+let arr4 = [2, [3, 5]];
+// console.log(arr4);
+let clone4 = [...arr4];
+console.log(clone4);
+//[2, [3, 5]];
+arr4[1][0] = 8;
+console.log(arr4);
+console.log(clone4);
