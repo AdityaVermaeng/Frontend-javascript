@@ -7,7 +7,7 @@
 
 let nums = [67, 65, 89, 76, 45, 34, 15, 32, 63];
 nums.map((val) => {
-    console.log(val);
+    // console.log(val);
 });
 let newArr = nums.map((val) => {
     // return val;

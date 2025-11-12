@@ -135,3 +135,13 @@ let d = arr9.toString()
 console.log(d);
 console.log(arr9);
 console.log(arr9.valueOf()); //default method just return like arr9
+
+console.log("-- -- -- --Cloning-------- "); //useful for manipulate the new array if we do not want to change the previous array
+let arr1 = [12, 34, 56, 78]
+let clone = [...arr1] //spread operator used 
+console.log(arr1);
+console.log(clone);
+
+arr1.push("Iron-man");
+console.log(arr1);
+console.log(clone);
