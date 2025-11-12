@@ -21,3 +21,32 @@ let newArr1 = num1.filter((val) => {
     return val > 50;
 })
 console.log(newArr1);
+
+console.log("-- -- -- --Cloning-------- "); //useful for manipulate the new array if we do not want to change the previous array
+let arr1 = [12, 34, 56, 78]
+let clone = [...arr1] //spread operator used 
+console.log(arr1);
+console.log(clone);
+arr1.push("Iron-man");
+console.log(arr1);
+console.log(clone);
+
+
+//using slice()
+let arr2 = [5, 6, 76, 98]
+let clone1 = arr2.slice();
+console.log(arr2);
+console.log(clone1);
+
+arr2.push("hulk");
+console.log(arr2);
+console.log(clone1);
+
+// new Array by from method
+
+const price = [12, 45, 66, 77, 88];
+const clone0 = Array.from(price);
+console.log(clone0);
+price.push("prince");
+console.log(price);
+console.log(clone0);
