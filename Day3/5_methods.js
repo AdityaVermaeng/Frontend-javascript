@@ -69,3 +69,25 @@ console.log(clone6); //[1,4,6]
 arr8.push("monu");
 console.log(clone6);
 console.log(arr8);
+
+//cloning array using filter()
+let aRr = [1, 2, 3];
+let clOne = aRr.filter(() => true)
+console.log(clOne); //[1,2,3]
+aRr.push("hero");
+console.log(aRr);
+console.log(clOne);
+
+// using structureClone(javascript method) for deep copy
+let aRR = [2, [5, 7]];
+let cLONe = structuredClone(aRR);
+aRR[1][0] = 99;
+console.log(aRR); //[2,[99,7]]
+console.log(cLONe); //[2, [5, 7]]
+
+//using JSON.parse and JASON.stringify()
+let arr10 = [4, [6, 9]];
+let clone9 = JSON.parse(JSON.stringify(arr10)); // JSON.stringify is  a method which convert obj and array into JSON formate string further JSON.parse again take JSON formate string and again convert into the arr or obj
+clone9[1][0] = 67;
+console.log(arr10);
+console.log(clone9);
