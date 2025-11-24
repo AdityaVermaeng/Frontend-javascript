@@ -81,16 +81,42 @@ arr2 = [2, 4, 6, 8]
 
 //note- inside the prameter if there is a three dot then it calls rest otherwise it known as spread operator
 
-
-let obj4 = {
-    firstName: "Aditya",
-    lastName: "Verma",
-    fullName1: function() {
-        console.log(`${this.firstName}-${this.lastName}`);
-    }
+let fullName1 = function(city, status) {
+    // console.log(this);
+    console.log(`${this.firstName}-${this.lastName} and my city is: ${city} and status is :${status}`);
+    return
 }
-obj4.fullName1();
-let nameData = obj4.firstName // this changes his value how function calls
-console.log(nameData);
-let fullName1Data = obj4.fullName1
-fullName1Data() //here this keyword loose his scope //give undefined
+let obj4 = {
+        firstName: "Aditya",
+        lastName: "Verma",
+
+    }
+    // obj4.fullName1();
+    // let nameData = obj4.firstName // this changes his value how function calls by user
+    // console.log(nameData);
+    // let fullName1Data = obj4.fullName1
+    // fullName1Data() //here this keyword loose his scope //give undefined
+
+
+//call apply bind used when this lost his scope
+
+let teacherData = {
+        firstName: "Saurabh",
+        lastName: "tiwari",
+        // fullName1: function() {
+        //     // console.log(this);
+        //     console.log(`${this.firstName}-${this.lastName}`);
+        // }
+    }
+    // obj4.fullName1()
+    // teacherData.fullName1()
+
+let staffData = {
+        firstName: "Anubhav",
+        lastName: "tiwari",
+    }
+    // console.log(fullName1.call(teacherData, "delhi", "student"));
+    // console.log(obj4.fullName1.call(staffData));
+    // console.log(fullName1.apply(teacherData, ["up", "trainer"]));
+let resultTeacherData = fullName1.bind(teacherData);
+resultTeacherData("haryana", "student")
