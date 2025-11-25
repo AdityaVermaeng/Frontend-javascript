@@ -185,7 +185,7 @@ console.log(newMarks);
 // console.log(a); //we just call  the function we get as the child function structure cause of console
 // a(); // in this case we just get the output cause of being child execute 
 // }
-// parent(child) //a fumction which is pass as an aurgument within a function is known as callback function 
+// parent(child) //a function which is pass as an aurgument within a function is known as callback function 
 //the function which takes that callback function is known as highorder function
 
 //2nd type

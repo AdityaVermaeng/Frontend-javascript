@@ -9,4 +9,4 @@ newBtn.prepend(el);
 
 //Q2
 let para = document.querySelector("p");
-para.classList.add("content2")
+para.classList.add("content2");
