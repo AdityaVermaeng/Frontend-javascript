@@ -1,0 +1,21 @@
+ #main {
+     display: flex
+ }
+ 
+ .card1 {
+     height: 100px;
+     width: 100px;
+     background-color: aqua;
+ }
+ 
+ .card2 {
+     height: 100px;
+     width: 100px;
+     background-color: rgb(45, 53, 53);
+ }
+ 
+ .card3 {
+     height: 100px;
+     width: 100px;
+     background-color: black;
+ }
