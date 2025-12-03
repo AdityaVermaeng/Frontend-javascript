@@ -36,3 +36,15 @@ function digitSum(num1) {
     console.log(sum);
 }
 digitSum(23456)
+
+//factorial of number
+function fact(factNum) {
+    let fac = 1;
+    for (let i = 1; i <= factNum; i++) {
+        fac = fac * i;
+    }
+    console.log(fac);
+}
+fact(5)
+
+//
