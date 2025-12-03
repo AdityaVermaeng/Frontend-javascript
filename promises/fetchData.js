@@ -4,4 +4,6 @@ then((data) => {
     return data.json()
 }).then((response) => {
     console.log(response);
+}).catch((error) => {
+    console.log("ERROR is:", error);
 })
