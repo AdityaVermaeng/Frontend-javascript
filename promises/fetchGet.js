@@ -1,4 +1,4 @@
-// fetch("http://jsonplaceholder.typicode.com/posts")
+// fetch("://jsonplachttpeholder.typicode.com/posts")
 //     .then(function(response) {
 //         return response.json(); //convert response to json
 //     })
