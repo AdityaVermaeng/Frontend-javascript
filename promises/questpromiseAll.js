@@ -29,3 +29,16 @@ const postAPI = fetch("https://dummyjson.com/users").then(res => res.json())
 Promise.all([userAPI, postAPI]).then(result => {
     console.log(result);
 }).catch(err => { console.log(err); })
+
+
+//Q3. Execute 3 timed taskes in parallel
+function parallelTask(time, value) {
+    return new Promise(res => setTimeout(() => res(value)))
+}
+Promise.all([parallelTask(200, "A"), parallelTask(300, "B"), parallelTask(400, "C")]).then(result => { console.log(result); })
+
+//Q4.  Demonstrate promise.all rejection solution
+const p1 = Promise.resolve("Resolve1");
+const p2 = Promise.reject("reject 2 or ERROR 2");
+const p3 = Promise.resolve("resolve3")
+Promise.all([p1, p2, p3]).catch(err => console.log(err))
