@@ -12,7 +12,7 @@
 // })
 
 // function fetchData(url) {
-//     return fetch(url).then(res => resjson());
+//     return fetch(url).then(res => res.json());
 // }
 // const p1 = fetch("https://dummyjson.com/products")
 // const p2 = fetch("https://dummyjson.com/users")
