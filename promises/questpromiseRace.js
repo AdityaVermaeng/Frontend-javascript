@@ -12,8 +12,8 @@ Promise.race([checkFastApi("https://dummyjson.com/products"),
 function timeout(ms) {
     return new Promise((_, reject) => setTimeout(() => reject("Timeout ERROR"), ms))
 }
-const apiCall = fetch("https://dummyjson.com/posts").then(res => res.json())
-Promise.race([apiCall, timeout(2000)]).then(result => console.log(" Result", result)).catch(err => console.log("Race result", err))
+const apiCall = fetch("https://dummyjson.com/posts").then(res => res.json());
+Promise.race([apiCall, timeout(2000)]).then(result => console.log(" Result", result)).catch(err => console.log("Race result", err));
 
 
 //Q7.Timer race 
