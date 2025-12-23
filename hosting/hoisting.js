@@ -11,13 +11,13 @@ function greet() {
 // console.log(greet);
 
 //for let and const there is no memory allocated they are present in temoraral daed zone(TDZ)
-// let data2 = function() {
-//     console.log("this is arrow function");
-// }
+let data2 = function() {
+    console.log("this is arrow function");
+}
 
 //Cannot access 'data2' before initialization cause of absence of memory allocation
 
-var data2 = function() {
+var data3 = function() {
         console.log("this is arrow function");
     }
     //due to variable it also gave the undefined result

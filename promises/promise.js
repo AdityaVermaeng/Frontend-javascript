@@ -6,7 +6,6 @@
 //     } else {
 //         reject("something went wrong");
 //     }
-
 // })
 // console.log(prom);
 
