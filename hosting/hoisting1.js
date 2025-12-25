@@ -36,3 +36,18 @@ let obj1 = {
 
 }
 obj1.a() // refer to the object itself
+
+
+function add(a, b) {
+    // console.log(a + b)
+    console.log(this);
+
+
+    function hii() {
+        // console.log("Hello Bro");
+        console.log(this); //undefined
+    }
+    hii()
+}
+// add(5, 6)
+add() //undefined
