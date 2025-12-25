@@ -8,13 +8,13 @@ function data() {
 //with unstrict mode it return the window obeject (global object)
 window.data();
 
-// let obj = {
+// let obj1 = {
 //     name: "naman",
 //     x: function() {
 //         console.log(this);
 //     }
 // }
-// obj.x(); //it refers to object itself
+// obj1.x(); //it refers to object itself
 
 let obj = {
     name: "naman",

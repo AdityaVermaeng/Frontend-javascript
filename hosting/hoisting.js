@@ -1,8 +1,8 @@
 console.log(greet);
 console.log(data2);
-console.log(name1) //trying to access the variable before the initialization 
+console.log(name11) //trying to access the variable before the initialization 
 
-var name1 = "rahul";
+var name11 = "rahul";
 
 function greet() {
     console.log("Hello guyzzz...");
