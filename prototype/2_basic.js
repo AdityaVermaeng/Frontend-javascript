@@ -5,7 +5,11 @@ function Smartphone(modelName, storage, camera, battery, charger) {
     this.battery = battery
     this.charger = charger
     this.getInfo = function() {
-        console.log(`${modelName} comes with ${storage} GB RAM , ${camera} megapixel camera ,${charger} mAh battery and ${charger} watt superfast charging`);
+        console.log(`${this.modelName} comes with
+         ${this.storage} GB RAM ,
+          ${this.camera} megapixel camera ,
+          ${this.charger} mAh battery and
+           ${this.charger} watt superfast charging`);
     }
 
     this.getKey = function() {
