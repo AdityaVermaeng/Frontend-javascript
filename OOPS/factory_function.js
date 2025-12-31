@@ -13,3 +13,4 @@ let user1 = student("Aditya", 22, "Delhi");
 let user2 = student("Anshu", 21, "banaras");
 user1.aboutMe();
 user2.aboutMe();
+console.log(user1)
