@@ -21,3 +21,9 @@ const greet = function hello() {
     console.log("Hi");
 };
 greet();
+
+
+//IIFE (Immediately Invoked Function Expression)
+(function() {
+    console.log("IIFE executed");
+})();
