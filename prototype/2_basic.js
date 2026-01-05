@@ -14,12 +14,12 @@ function Smartphone(modelName, storage, camera, battery, charger) {
 
     this.getKey = function() {
         // console.log(this.modelName)
-        console.log(this)
+        console.log(this);
     }
 }
-obj1 = new Smartphone("Oneplus", 8, 32, 5000, 95);
+let obj1 = new Smartphone("Oneplus", 8, 32, 5000, 95);
 obj1.getInfo();
-obj2 = new Smartphone("Samsung", 16, 12, 4800, 35);
+let obj2 = new Smartphone("Samsung", 16, 12, 4800, 35);
 obj2.getInfo();
 obj1.getKey();
 console.log(obj1);
