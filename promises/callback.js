@@ -25,3 +25,29 @@ setTimeout(() => {
         }, 2000)
 
     }, 3000) //before the promise we use this callback hell
+
+// callback hell or pyramid of DOOM
+
+
+
+let cart = ["shoes", "cap", "shirt", "pant"];
+api.CreateOrder(cart, function() {
+    api.ProceesToPayment(
+        function() {
+            api.ShowOrderSummury(
+                function() {
+                    api.UpdateWallet()
+                })
+        })
+})
+
+
+
+
+//while we making an E-Comerce web site then first we want that create a order then after proceed to payment  after the payment we need to show order summury page then after we need to update the wallet
+
+//this code becomes unreadable and unmaintainable due to callback function
+//this creates two major problem  1.callback hell 2.inversion of control
+//inversion of control means we just pass the code insinde the createOrder() and we are not doing anything we just depend on the createOrder() when it executed then it call that perticuler function which is passed through means we simmply loose our control over it and start trusting blindly on createOrderApi to proceed the payment
+
+//importance callback are usefull to make javascript asynchronounsly execute the code
