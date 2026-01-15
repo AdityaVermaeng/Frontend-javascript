@@ -50,3 +50,18 @@ tesla.stop();
 console.log(tesla);
 let obj1 = new Car("sumo", "blue", 87)
 console.log(obj1); //we can make an instannce of the Car class which only contains(brand and color) which consturctor contains the property
+
+
+//inheritance using prototype
+let Car1 = {
+    brand() {
+        console.log(`${this.name} is a good car`);
+    }
+}
+let fortuner = Object.create(Car1)
+fortuner.name = "Toyota"
+fortuner.price = function() {
+    console.log(`the ${this.name} price 500000`)
+}
+fortuner.brand();
+fortuner.price();
