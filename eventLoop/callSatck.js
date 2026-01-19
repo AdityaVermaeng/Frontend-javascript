@@ -5,3 +5,10 @@ setTimeout(function(cb) {
 console.log("end"); //same as first line
 
 //output: hii,end,Inside the callback
+
+//Another use case of callback queue
+console.log("start");
+document.getElementById("btn").addEventListener("click", function cb() {
+    console.log("callback");
+})
+console.log("End")
