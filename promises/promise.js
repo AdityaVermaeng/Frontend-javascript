@@ -33,3 +33,18 @@ function getData(data) {
 // getData(true).then(fullFill).catch(rejection);
 getData(false).then((response) => { console.log(response); }).catch((error) => { console.log(error); });
 console.log("hiii"); //cause of asynchronous property "hii " shows at first
+
+
+//promise
+const promise = createOrder(cart);
+promise.then(function(orderId) {
+    return proceedToPayment();
+})
+
+//or
+createOrder(cart)
+    .then((orderId) => proceedToPayment(payMentInfo))
+    .then((payMentInfo) => showOrderSummry(updateStaus))
+    .then((updateStatus) => updateWallet(updated));
+
+//
