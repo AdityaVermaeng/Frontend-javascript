@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+
+</head>
+
+<body>
+    <div id="container1">
+    </div>
+    <div id="container2"></div>
+</body>
+<script>
+    const root = ReactDOM.createRoot(document.getElementById("container2"));
+
+    function setTimer() {
+        const element = `<div>
+              <h1> Javascript</h1>
+      <input type ="text"/>
+      <p>${new Date().toLocaleTimeString()}</p> 
+      </div>`;
+        document.getElementById("container1").innerHTML = element;
+    }
+    setInterval(setTimer, 1000);
+
+    // const root = ReactDom.createRoot(document.getElementById("container2"));
+    const element2 = React.createElement(
+        "div",
+        null,
+        React.createElement('h1', null, 'react'),
+        React.createElement('input', {
+            type: 'text'
+        }),
+        React.createElement('p', null, new Date().toLocaleTimeString())
+    );
+    root.render(element2)
+</script>
+
+</html>
