@@ -12,4 +12,8 @@ console.log(arr1); //output:[1,2,3,9,5,6,7]
 
 
 //commmon aaray methods
-const arr2 = []
+const arr2 = [1, 2, 3, 4, 5, 6, 7];
+const arr3 = [2, 3, 4, 5, 6]
+    // arr2.slice(1, 4);
+const arr4 = arr2.concat(arr3)
+console.log(arr4);
