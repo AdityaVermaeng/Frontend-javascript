@@ -6,5 +6,5 @@
 // localStorage.setItem("USER", JSON.stringify(user))
 // localStorage.setItem("no", hii)
 
-let getUserData = JSON.parse(localStorage.getItem('USER'))
+let getUserData = JSON.parse(localStorage.getItem('USER'));
 console.log(getUserData);
