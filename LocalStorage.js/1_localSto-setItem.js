@@ -20,4 +20,4 @@ let setColorThemeBody = () => {
 setColorThemeBody() //only when refresh it will execute
     // localStorage.removeItem("TIME") //it remove the "TIME "key from local storage
 
-// localStorage.clear() //it clear the all data from our local storage
+localStorage.clear() //it clear the all data from our local storage
