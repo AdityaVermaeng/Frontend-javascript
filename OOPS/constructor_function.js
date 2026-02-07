@@ -1,7 +1,7 @@
 function Student(name1, age, address) {
-    this.name1 = name1
-    this.age = age
-    this.address = address
+    this.name1 = name1;
+    this.age = age;
+    this.address = address;
     getInfo = function() {
         console.log(`My name is ${this.myName}. I am ${this.age}. I am from${this.address}`)
     }
