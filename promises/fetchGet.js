@@ -7,7 +7,7 @@ fetch("://jsonplachttpeholder.typicode.com/posts")
         console.log(data); //print data
     }).catch(function(error) {
         console.log("Error:", error); //network error
-    })
+    });
 
 //fetch data from text file
 
@@ -21,4 +21,4 @@ fetch("./fetchdata.txt")
     })
     .catch(function(error) {
         console.log("Error:", error);
-    })
+    });
