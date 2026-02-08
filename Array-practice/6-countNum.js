@@ -8,3 +8,20 @@ for (let val of arr) {
     }
 }
 console.log(count);
+
+
+
+//prime number
+// let arr1 = [11, 23, 34, 45, 13, 17, 19];
+// let count1 = 0;
+// if (val <= 1) {
+//     console.log("Not a prime number")
+// } else {
+//     for (let val of arr1) {
+//         if (val % val === 0) {
+//             // console.log("prime ")
+//             count1++;
+//         }
+//     }
+// }
+// console.log(count1);
