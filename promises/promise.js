@@ -17,9 +17,7 @@ function getData(data) {
             reject("something went wrong");
         }
     });
-
 }
-
 // function fullFill(response) {
 //     console.log(response);
 // }
